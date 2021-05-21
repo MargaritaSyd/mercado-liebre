@@ -1,0 +1,22 @@
+{
+  "name": "mercado-liebre",
+  "version": "1.0.0",
+  "description": "Proyecto individual integrado",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargaritaSyd/mercado-liebre.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MargaritaSyd/mercado-liebre/issues"
+  },
+  "homepage": "https://github.com/MargaritaSyd/mercado-liebre#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
