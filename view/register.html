@@ -2,6 +2,7 @@
     <head>
         <meta name = "viewport" content = "width = device-width , initial-scale = 1">
         <link href = '/css/style.css' rel="stylesheet">
+        <link href = '/css/stylelogin.css' rel="stylesheet">
         <link href = '/css/fontawesome/css/all.css' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
@@ -26,21 +27,21 @@
             <div class="recuadro">
                 <h1> Registrate </h1>
                 <form action="" method="POST">
-                    <div> Nombre y Apellido </div>
+                    <div class="formula"> Nombre y Apellido </div>
                         <input type="text"> 
                     <br>
-                    <div> Nombre de usuario </div>
-                        <input type="text">
-                    <div> Fecha de nacimiento </div>
-                        <input type="date">
-                    <div> Domicilio </div>
-                        <input type="text">
-                    <div class="perfilusuario"> Que buscas? </div>
+                    <div class="formula"> Nombre de usuario </div>
+                        <input type="text" required>
+                    <div class="formula"> Fecha de nacimiento </div>
+                        <input type="date" required>
+                    <div class="formula"> Domicilio </div>
+                        <input type="text" required>
+                    <div class="formula"> Que buscas? </div>
                         <label> Comprar </label>
                             <input type="radio" name="perfil" value="comprar">
                         <label> Vender </label>
                             <input type="radio" name="perfil" value="vender">
-                    <div class="perfilusuario"> Categorías de interes </div>
+                    <div id="perfilusuario"> Categorías de interes 
                         <label> Electro </label>
                             <input type="checkbox" name='electro' value="electro">
                         <label> Moda </label>
@@ -51,13 +52,14 @@
                             <input type="checkbox" name='juguetería' value="juguetería">
                         <label> Vida sana </label>
                             <input type="checkbox" name='vida sana' value="vida sana">  
-                    <div> Foto de perfil </div>
+                    </div>
+                    <div class="formula"> Foto de perfil </div>
                         <input type="file" name="imagen" accept=".jpg">       
-                    <div> Contraseña </div>
-                        <input type="password">
-                    <div> Confirmar contraseña</div>
-                        <input type="password">
-                    <br>
+                    <div class="formula"> Contraseña </div>
+                        <input type="password" required>
+                    <div class="formula"> Confirmar contraseña</div>
+                        <input type="password" required>
+                   <br>
                     <button type="submit"> <a href='/'> Enviar </a> </button>
                     <button type="reset"> Borrar </button>
                 </form>

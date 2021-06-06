@@ -5,7 +5,7 @@
 .recuadro{
     border: solid 15px #ebebeb;
     width: 50%;
-    background-color: #EAC926;
+    background-color: #ebebeb;
 }
 
 .cuadro{
@@ -16,7 +16,19 @@
     width: 100%;
 }
 
+#perfilusuario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 55%;
+    position: relative;
+    left: 20%;
+    padding-top: 5%;
+}
 
+.formula{
+    padding-top: 5%;
+}
 body {
     background-color: #EAC926;
     font-family: 'Roboto';
@@ -125,7 +137,7 @@ footer{
     width: 7%;
     height: 15%;
 }
-.product{
+#product{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
@@ -133,6 +145,25 @@ footer{
     position: relative;
     left: 7%
     
+}
+#oferta{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+    position: relative;
+    left: 7%
+}
+.detoferta{
+    font-size: 16px;
+    background-color: white;
+    width: 85%;
+    border: solid 15px #ebebeb;
+    padding: 10px;
+}
+
+.imgoferta{
+    width: 80%;
 }
 .detalle{
     font-size: 16px;
@@ -177,7 +208,7 @@ footer{
 }
 @media(min-width: 600px){
     footer{
-        flex-wrap: nowrap;
+        display: flex;;
     }
 }
 @media(min-width: 600px){
@@ -187,3 +218,13 @@ footer{
     }
 }
 
+@media (min-width: 361px){
+    .detoferta{
+        width: 50%;
+    }
+}
+@media (min-width: 769px){
+    .detoferta{
+        width: 25%;
+    }
+}
