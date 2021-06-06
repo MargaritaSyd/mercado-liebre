@@ -50,6 +50,9 @@ main {
     padding-bottom: 7%;
 }
 footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     text-align: center;
     background-color: white;
     color: #3e4043;
@@ -76,10 +79,12 @@ footer{
     font-size: 7px;
     
 }
-.precios{
+.descrip{
     display: flex;
     flex-wrap: wrap;
     padding: 10%;
+}
+.precios{
     position: relative;
 }
 
@@ -154,15 +159,21 @@ footer{
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 361px){
     .navbar{
         display: none;
     }
+    .descrip{
+        display: none;
+    }
+
 }
 @media(min-width: 600px){
     footer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    #truck{
+
     }
 }
+
