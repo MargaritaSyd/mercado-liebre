@@ -11,7 +11,8 @@ app.listen(process.env.PORT || 3000, function() {
 //})
 
 app.get('/' , (req,res) => {
-    res.sendFile(path.resolve(__dirname , './view/home.html'))
+    let htmlPath= path.join(__dirname, "./view/home.html")
+    res.sendFile(htmlPath)
 });
 
 app.get('/register' , (req,res) => {
