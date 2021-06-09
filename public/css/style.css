@@ -211,7 +211,9 @@ main {
 
 .desc:hover{
     height: 50px;
+    overflow: visible;
 }
+
 
 
 @media (min-width: 600px) {
