@@ -29,6 +29,11 @@
 .formula{
     padding-top: 5%;
 }
+
+#enviar:hover{
+    background-color: blue
+}
+
 body {
     background-color: #EAC926;
     font-family: 'Roboto';
@@ -62,7 +67,9 @@ main {
     padding-top: 7%;
     padding-bottom: 7%;
 }
-footer{
+
+
+#f{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -88,6 +95,11 @@ footer{
 
 .espacioDeFoot{
     height: 20px;
+}
+
+
+.fot{
+    width: 100%;
 }
 
 
@@ -184,10 +196,24 @@ footer{
     left: 90%;
     bottom: 90%;
 }
+
+
+
 #banner{
     width: 100%;
     height: auto;
 }
+
+.desc{
+    height: 0px;
+    overflow: hidden;
+}
+
+.desc:hover{
+    height: 50px;
+}
+
+
 @media (min-width: 600px) {
     #menu {
       display: none;
@@ -206,11 +232,8 @@ footer{
     }
 
 }
-@media(min-width: 600px){
-    footer{
-        display: flex;;
-    }
-}
+
+
 @media(min-width: 600px){
     #navbar{
         flex-wrap: wrap;
@@ -226,5 +249,15 @@ footer{
 @media (min-width: 769px){
     .detoferta{
         width: 25%;
+    }
+}
+@media (min-width: 769px){
+    #f{
+        flex-direction: row;
+        padding-top: 15px;
+        padding-left: 35px;
+    }
+    .fot{
+        width: 30%;
     }
 }
