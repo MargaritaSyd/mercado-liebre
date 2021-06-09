@@ -209,11 +209,13 @@ main {
     overflow: hidden;
 }
 
-.desc:hover{
+.detalle:hover .desc{
     height: 50px;
-    overflow: visible;
 }
 
+.precios:hover .truck1{
+    transform: rotate(360deg);
+}
 
 
 @media (min-width: 600px) {
